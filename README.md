@@ -3,6 +3,9 @@
 This script detects changes in your external IP and uses AWS boto library 
 to update the ports in a specific security group for your AWS controller.
 
+The script will remove ALL entries in a single security group and update them with
+your external IP and port mappings.
+
 # Setup
 
 ## AWS Security Group
@@ -13,7 +16,6 @@ needed. I.e.
 { 'protocol': 'udp', 'port': 10001 },
 { 'protocol': 'udp', 'port': 3478 },
 { 'protocol': 'tcp', 'port': 8080 },
-{ 'protocol': 'tcp', 'port': 22 },
 { 'protocol': 'tcp', 'port': 8443 },
 { 'protocol': 'tcp', 'port': 6789 },
 { 'protocol': 'tcp', 'port': 8880 }    
