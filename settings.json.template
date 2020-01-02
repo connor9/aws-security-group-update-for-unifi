@@ -1,0 +1,4 @@
+{
+  "filename": "/path/to/file/for/storing/ip/currentip.txt",
+  "security_group_id": "sg-xxxxx"
+}
